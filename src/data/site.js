@@ -107,7 +107,7 @@ export const PROJECTS = [
     href: 'https://github.com/dassmod/auditable-front-desk',
     status: 'public',
     live: true,
-    text: 'A receptionist agent for a fictional clinic, where every booking leaves a record a stranger can re-check. The model proposes, plain-code guards decide, and every decision is replayed afterwards. It runs as a text agent; a voice, a phone line and a backend on Bittensor subnets are the next phases.',
+    text: 'A receptionist agent for a fictional clinic, where every booking leaves a record a stranger can re-check. The model proposes, plain-code guards decide, and every decision is replayed afterwards. It runs as a text agent; an HTTP API, retrieval over the clinic\'s rules and a scored test set come next, then a voice.',
   },
   {
     title: 'proof-of-agent-run',
@@ -131,18 +131,17 @@ export const PROJECTS = [
 ];
 
 export const LEARNING = [
-  ['How a chain agrees', 'Consensus, gossip and the mempool, from the ground up. What is public before anything is ordered.'],
-  ['What the machine remembers', 'State, the trie, and the root that makes agreement between thousands of machines cheap.'],
-  ['Proving an inference', "Four ways to check a stranger's AI work: cryptographic proofs, trusted hardware, reproducible execution, staked validators."],
-  ['Agents with an identity', 'ERC-8004 registries, and the empty slot under agent validation that my replay engine is built for.'],
-  ['Why frontier training stays in one room', 'Distributed training, and the communication wall between machines that keeps it expensive.'],
+  ['Python, by hand', 'Writing it from an empty file, without an assistant, until it comes out without looking.'],
+  ['Serving an agent', 'FastAPI and Docker around auditable-front-desk, so the agent answers over HTTP like any other service.'],
+  ['Retrieval', 'RAG over the clinic\'s own rules, and when retrieval beats putting everything into the prompt.'],
+  ['Measuring an agent', 'A test set of conversations, scored for right bookings and right refusals, with every run traced.'],
   ['What one run can prove', "The trace format for proof-of-agent-run: what a machine can honestly re-derive about another machine's run."],
 ];
 
 export const STACK = [
   ['Python', 'https://www.python.org', 'My default for everything that has to run in production: integrations, agents, automation and the build scripts around them.'],
   ['Claude API and Agent SDK', 'https://docs.claude.com', 'Skills, scheduled tasks and sub-agent orchestration. The layer most of my agent systems stand on.'],
-  ['LangGraph', 'https://langchain-ai.github.io/langgraph/', 'For agents that have to pause for hours between turns and pick up exactly where they stopped.'],
+  ['LLM APIs and tool calling', 'https://platform.openai.com/docs/guides/function-calling', 'OpenAI-compatible chat APIs with tool calls, read as plain JSON so every call can be traced and replayed.'],
   ['Solidity and Foundry', 'https://getfoundry.sh', 'Contracts and their tests, on testnet. Where the oracle pattern gets written down as code.'],
   ['Twilio and WebRTC', 'https://www.twilio.com', 'The telephony underneath voice agents: numbers, routing, voicemail detection and the quirks of real calls.'],
   ['web3.py', 'https://web3py.readthedocs.io', 'How my Python agents reach the chain: signing attestations, submitting them, and reading the result back.'],
