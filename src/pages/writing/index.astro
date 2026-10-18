@@ -12,7 +12,25 @@ const shown = episodes.slice(0, 8);
 ---
 <Base title="Writing" current="writing">
   <article class="page">
-    <PageHead num="05" title="Writing" intro="Everything I publish. A show about decentralized AI twice a week, and the long-read that goes with every episode." />
+    <PageHead num="05" title="Writing" intro="Everything I publish. Articles on what I build and why, and a show about decentralized AI twice a week with a long-read behind every episode." />
+
+    {SHOW_POSTS && posts.length > 0 && (
+      <section class="section">
+        <h2>Articles</h2>
+        <p class="lede">Long first-person pieces on what I build and why I build it.</p>
+        <div class="rows" style="margin-top:30px;">
+          {posts.map((p) => (
+            <div class="row">
+              <div class="row-head">
+                <a class="row-title" href={`/writing/${p.slug}/`}><span class="t">{p.title}</span><Icon kind="arrow" size={13} /></a>
+                <span class="row-date">{p.date}</span>
+              </div>
+              <p class="row-text">{p.excerpt}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
 
     <section class="section">
       <h2>Plain Strata</h2>
@@ -40,24 +58,6 @@ const shown = episodes.slice(0, 8);
         <div class="links" style="margin-top:30px;"><Link href={LINKS.apple}>All {episodes.length} episodes on Apple Podcasts</Link></div>
       )}
     </section>
-
-    {SHOW_POSTS && posts.length > 0 && (
-      <section class="section">
-        <h2>Posts</h2>
-        <p class="lede">Notes from the build, written the evening it happened. Longer posts will land here too.</p>
-        <div class="rows" style="margin-top:30px;">
-          {posts.map((p) => (
-            <div class="row">
-              <div class="row-head">
-                <a class="row-title" href={`/writing/${p.slug}/`}><span class="t">{p.title}</span><Icon kind="arrow" size={13} /></a>
-                <span class="row-date">{p.date}</span>
-              </div>
-              <p class="row-text">{p.excerpt}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-    )}
 
     <Touch primary={null} />
   </article>
