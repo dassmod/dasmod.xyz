@@ -359,6 +359,16 @@ a.row-title:hover .t, a.item-title:hover .t { text-decoration: underline; text-d
 .prose h3 + p { margin-top: 12px; }
 .prose em { font-style: italic; }
 .prose code { font-family: var(--mono); font-size: .86em; padding: 1px 4px; border-radius: 3px; background: var(--code-bg); }
+.prose a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.prose ul { margin-top: 14px; padding-left: 20px; }
+.prose li { font-size: 17px; line-height: 27px; }
+.prose li + li { margin-top: 6px; }
+.prose pre { margin-top: 18px; padding: 14px 16px; border-radius: 4px; overflow-x: auto; font-size: 13px; line-height: 20px; }
+.prose pre code { padding: 0; background: none; font-size: inherit; }
+.prose table { display: block; overflow-x: auto; margin-top: 18px; border-collapse: collapse; font-size: 15px; line-height: 22px; }
+.prose th, .prose td { text-align: left; vertical-align: top; padding: 8px 14px 8px 0; border-bottom: 1px solid var(--hair); }
+.prose th { font-weight: 600; }
+.prose table + p, .prose pre + p, .prose ul + p { margin-top: 18px; }
 .back { margin-bottom: 28px; }
 
 /* ----------------------------------------------------------------- home */

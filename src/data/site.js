@@ -1,7 +1,7 @@
 // Everything on the site that is written by hand lives here.
 // Anything that changes by itself (episodes, long-reads, commits) comes from live.json.
 
-// Posts are written and kept in src/content/posts, but hidden from Writing for now.
+// Posts are written and kept in src/content/posts and listed on Writing under Articles.
 export const SHOW_POSTS = true;
 
 // Where I am now. The home clock reads this zone.

@@ -7,6 +7,8 @@ export const posts = Object.entries(modules)
     title: mod.frontmatter.title,
     date: String(mod.frontmatter.date),
     excerpt: mod.frontmatter.excerpt,
+    // Optional: orders posts that share a date (lower comes first; posts without it go last).
+    order: Number(mod.frontmatter.order ?? Infinity),
     Content: mod.Content,
   }))
-  .sort((a, b) => b.date.localeCompare(a.date));
+  .sort((a, b) => b.date.localeCompare(a.date) || a.order - b.order);
