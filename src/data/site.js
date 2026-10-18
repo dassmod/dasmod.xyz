@@ -2,7 +2,7 @@
 // Anything that changes by itself (episodes, long-reads, commits) comes from live.json.
 
 // Posts are written and kept in src/content/posts, but hidden from Writing for now.
-export const SHOW_POSTS = false;
+export const SHOW_POSTS = true;
 
 // Where I am now. The home clock reads this zone.
 export const PLACE = { city: 'Tbilisi, Georgia', zone: 'Asia/Tbilisi' };
