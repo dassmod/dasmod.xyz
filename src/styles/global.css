@@ -355,6 +355,9 @@ a.row-title:hover .t, a.item-title:hover .t { text-decoration: underline; text-d
 .prose { margin-top: 48px; max-width: 560px; }
 .prose p { font-size: 17px; line-height: 27px; }
 .prose p + p { margin-top: 18px; }
+.prose h3 { font-weight: 600; font-size: 20px; line-height: 27px; letter-spacing: -.2px; margin-top: 44px; }
+.prose h3 + p { margin-top: 12px; }
+.prose em { font-style: italic; }
 .prose code { font-family: var(--mono); font-size: .86em; padding: 1px 4px; border-radius: 3px; background: var(--code-bg); }
 .back { margin-bottom: 28px; }
 
