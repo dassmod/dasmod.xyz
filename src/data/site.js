@@ -12,6 +12,7 @@ export const LINKS = {
   github: 'https://github.com/dassmod',
   linkedin: 'https://www.linkedin.com/in/dastan-modubash',
   x: 'https://x.com/dassmod',
+  plainstrata: 'https://plainstrata.com',
   apple: 'https://podcasts.apple.com/us/podcast/plain-strata/id6783455764',
   newsletter: 'https://buttondown.com/plainstrata',
 };
@@ -40,7 +41,7 @@ export const STORY = [
   {
     title: 'The thing I could not name',
     when: '2026 to now',
-    html: `A hunch that something sat at the intersection of the two. I asked for a course on it, and that course became ${external(LINKS.apple, 'Plain Strata')}, the show I now publish twice a week.`,
+    html: `A hunch that something sat at the intersection of the two. I asked for a course on it, and that course became ${external(LINKS.plainstrata, 'Plain Strata')}, the show I now publish twice a week.`,
   },
 ];
 
