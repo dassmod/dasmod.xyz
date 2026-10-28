@@ -5,7 +5,7 @@
 export const SHOW_POSTS = true;
 
 // Where I am now. The home clock reads this zone.
-export const PLACE = { city: 'Tbilisi, Georgia', zone: 'Asia/Tbilisi' };
+export const PLACE = { city: 'Bishkek, Kyrgyzstan', zone: 'Asia/Bishkek' };
 
 export const LINKS = {
   email: 'mailto:dasmodubash@gmail.com',
@@ -58,7 +58,7 @@ export const BACKGROUND = [
   { title: 'Middle East Technical University', when: '2018', text: "Bachelor of Arts in City and Regional Planning, Faculty of Architecture, Ankara." },
   { title: 'University of Manchester', when: '2014 to 2015', text: 'Erasmus exchange programme.' },
   { title: 'Languages', when: '', text: 'Kyrgyz is my native language. Russian and English at C2, and English is the language I work in. Turkish at C1.' },
-  { title: 'Based in', when: 'UTC+4', text: 'Tbilisi, Georgia, at the moment. Remote, and used to working across time zones.' },
+  { title: 'Based in', when: 'UTC+6', text: 'Bishkek, Kyrgyzstan, at the moment. Remote, and used to working across time zones.' },
 ];
 
 export const WORK = [
@@ -132,18 +132,22 @@ export const PROJECTS = [
 ];
 
 export const LEARNING = [
-  ['Python, by hand', 'Writing it from an empty file, without an assistant, until it comes out without looking.'],
-  ['Serving an agent', 'FastAPI and Docker around auditable-front-desk, so the agent answers over HTTP like any other service.'],
-  ['Retrieval', 'RAG over the clinic\'s own rules, and when retrieval beats putting everything into the prompt.'],
-  ['Measuring an agent', 'A test set of conversations, scored for right bookings and right refusals, with every run traced.'],
-  ['What one run can prove', "The trace format for proof-of-agent-run: what a machine can honestly re-derive about another machine's run."],
+  ['Inference on Bittensor', 'The model, speech and translation calls moved onto subnets such as Chutes and Vocence, and what that costs in latency next to a centralized stack.'],
+  ['ERC-8004 validation', "The agent's identity and a replay verdict written to the registries on a testnet, so anyone can read the verdict without trusting my server."],
+  ['Attestation', 'What hardware can vouch for: running the agent inside a confidential machine, and carrying the signed proof of which code ran.'],
 ];
 
 export const STACK = [
-  ['Python', 'https://www.python.org', 'My default for everything that has to run in production: integrations, agents, automation and the build scripts around them.'],
+  ['Python', 'https://www.python.org', 'My default for everything that has to run in production: integrations, agents, automation and the build scripts around them. I write it by hand, from an empty file.'],
   ['Claude API and Agent SDK', 'https://docs.claude.com', 'Skills, scheduled tasks and sub-agent orchestration. The layer most of my agent systems stand on.'],
+  ['LangGraph', 'https://langchain-ai.github.io/langgraph/', 'For agents that have to pause for hours between turns and pick up exactly where they stopped.'],
   ['LLM APIs and tool calling', 'https://platform.openai.com/docs/guides/function-calling', 'OpenAI-compatible chat APIs with tool calls, read as plain JSON so every call can be traced and replayed.'],
+  ['FastAPI and Docker', 'https://fastapi.tiangolo.com', 'An agent served over HTTP like any other service: typed requests and replies, sessions, and a container around the whole thing.'],
+  ['Retrieval', 'https://en.wikipedia.org/wiki/Retrieval-augmented_generation', "RAG over a business's own rules, and the judgment of when retrieval beats putting everything into the prompt."],
+  ['Evals', 'https://platform.claude.com/docs/en/test-and-evaluate/develop-tests', 'A test set of conversations scored for right bookings and right refusals, with every run traced.'],
   ['Solidity and Foundry', 'https://getfoundry.sh', 'Contracts and their tests, on testnet. Where the oracle pattern gets written down as code.'],
   ['Twilio and WebRTC', 'https://www.twilio.com', 'The telephony underneath voice agents: numbers, routing, voicemail detection and the quirks of real calls.'],
+  ['Pipecat', 'https://github.com/pipecat-ai/pipecat', 'The voice body around an agent: speech in, speech out, turn-taking and interruptions, with the delay measured per stage.'],
   ['web3.py', 'https://web3py.readthedocs.io', 'How my Python agents reach the chain: signing attestations, submitting them, and reading the result back.'],
+  ['proof-of-agent-run', 'https://github.com/dassmod/proof-of-agent-run', "My own replay engine and trace format: what a machine can honestly re-derive about another machine's run."],
 ];
